@@ -15,7 +15,8 @@ app.get("/json", (req, res) => {
   // } else {
   //   res.json({ message: "Hello json" });
   // }
-  res.send(process.env.MESSAGE_STYLE)
+  // res.send(process.env.MESSAGE_STYLE)
+  res.send("Hello World")
 });
 
 app.use("/public", express.static(`${__dirname}/public`));
