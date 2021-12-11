@@ -7,7 +7,7 @@
 		"express": "^4.14.0",
 		"fcc-express-bground": "https://github.com/freeCodeCamp/fcc-express-bground-pkg.git"
 	},
-	"engine": {
+	"engines": {
 		"node": "^16.x",
 		"npm": "^8.x"
 	},
