@@ -9,10 +9,6 @@
 	},
 	"main": "server.js",
 	"scripts": {
-		"start": "node server.js",
-		"start:dev": "nodemon server.js"
-	},
-	"devDependencies": {
-		"nodemon": "^2.0.15"
+		"start": "node server.js"
 	}
 }
