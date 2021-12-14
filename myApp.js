@@ -46,7 +46,12 @@ const nameHandler = (req, res, next) => {
   res.json({ name: `${first} ${last}` });
 };
 
-app.route("/name").get(nameHandler).post(nameHandler);
+app.route("/name").get(nameHandler).post((req, res, next) => {
+  const first = req.body.first;
+  const last = req.body.last;
+
+  res.json({ name: `${first} ${last}` })
+});
 
 app.use("/public", express.static(`${__dirname}/public`));
 
