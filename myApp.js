@@ -6,8 +6,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(express.urlencoded({ extended: false }));
-
 app.get("/", (req, res) => {
   // res.send("Hello Express")
   console.log(`${__dirname}/views/index.html`);
