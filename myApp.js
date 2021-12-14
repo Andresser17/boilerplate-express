@@ -37,6 +37,15 @@ app.get("/:word/echo", (req, res, next) => {
   res.json({ echo: word });
 });
 
+const nameHandler = (req, res, next) => {
+  const first = req.query.first;
+  const last = req.query.last;
+
+  res.json({ name: `${first} ${last}` });
+};
+
+app.route("/name").get(nameHandler).post(nameHandler);
+
 app.use("/public", express.static(`${__dirname}/public`));
 
 module.exports = app;
